@@ -1,0 +1,12 @@
+{%extends "layout.html"%}
+{%block content%}
+  <h1>Login to the MIS407 Website</h1>
+  <h2>{{ content }}</h2>
+  <form action="/login" method="POST">
+    <label>Username:</label><input type="text" value="" name="user"/>
+    <br/>
+    <label>Password:</label><input type="password" value="" name="password" />
+    <br/>
+    <input type="submit" value="Login" />
+  </form>
+{%endblock%}
